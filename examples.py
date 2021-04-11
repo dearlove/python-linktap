@@ -1,12 +1,12 @@
 import asyncio
 import sys
-from linktap import linktap
+from linktap import LinkTap
 
 
 async def main():
     username = sys.argv[1]
     apiKey = sys.argv[2]
-    lt = linktap.LinkTap(username, apiKey)
+    lt = LinkTap.LinkTap(username, apiKey)
     all_devices = lt.get_all_devices()
     if all_devices == "error":
         print("all_devices - error")

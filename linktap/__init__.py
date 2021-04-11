@@ -1,1 +1,1 @@
-from . import linktap
+from . import LinkTap
